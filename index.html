@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#DDEEF4">
+<title>万物 B 面 · Side B</title>
+<link rel="stylesheet" href="style.css">
+<body>
+<header><a class="wordmark" href="./" aria-label="万物B面首页">side<span>b</span><i>♪</i></a><span class="edition">万物 B 面</span><button id="about" class="quiet" aria-expanded="false" aria-controls="explanation">它怎么唱？</button></header>
+<main>
+  <section class="instrument" aria-label="三维物体唱片机">
+    <div class="invitation"><h1>换个面，<br>听听看。</h1><p>三根唱针。一件东西。<br>滑一下，旋律就变了。</p></div>
+    <div id="stage" role="img" aria-label="旋转的三维物体与三支唱针；也可使用右侧滑杆调整唱针高度"></div>
+    <div class="object-caption"><span id="objectName">浪纹花瓶</span><span id="fixtureMark">自造几何样机</span></div>
+    <div class="transport"><button id="play" class="play"><span aria-hidden="true">▶</span> 开始播放</button><label class="tempo">转速 <input id="tempo" type="range" min="72" max="156" step="1" value="120"><output id="bpm">120</output><span>bpm</span></label></div>
+  </section>
+  <aside>
+    <section class="objects"><h2>放上一件东西</h2><div class="object-buttons"><button data-kind="vase" class="selected" aria-pressed="true"><span class="icon vase"><svg viewBox="0 0 56 56" aria-hidden="true"><path d="M14 8Q28 14 42 8Q29 30 39 45Q28 52 17 45Q27 30 14 8Z" fill="currentColor"/><path d="M14 8Q28 2 42 8Q28 14 14 8" fill="#a94551"/></svg></span>浪纹花瓶</button><button data-kind="moon" aria-pressed="false"><span class="icon moon"><svg viewBox="0 0 56 56" aria-hidden="true"><path d="M42 7C5 5 3 46 39 48C19 32 23 18 42 7Z" fill="currentColor"/></svg></span>弯月</button><button data-kind="shell" aria-pressed="false"><span class="icon shell"><svg viewBox="0 0 56 56" aria-hidden="true"><path d="M16 40C50 52 48 28 15 30S14 10 36 17S39 30 29 25" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/></svg></span>盘旋管</button></div></section>
+    <section class="needles"><h2>唱针往哪儿放？</h2><p class="hint">拖动唱针，或滑动下面的手柄。</p><div id="tracks"></div></section>
+    <p class="small-note">空隙是休止。<br>每一处轮廓，都有自己的拍子。</p>
+  </aside>
+</main>
+<div id="explanation" hidden><p>我们把物体横切成三道轮廓。唱针读到的半径决定音高，轮廓的变化决定落在哪一拍。形状改变，谱子也改变。</p><p>这是几何编曲，不是物体材质的真实声音。当前三个形状由代码自造；Aholo Lux3D 生成资产尚未接入。全部计算与发声都在你的浏览器内完成。</p></div>
+<footer><span>一件可以玩的几何乐器</span><span id="status" role="status">点播放，让它开口。</span><span>机械样机 · 2026</span></footer>
+<script type="module" src="main.mjs"></script>
+</body>
+</html>
