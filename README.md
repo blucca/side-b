@@ -11,3 +11,5 @@ Serve this directory with any static HTTP server. Open `index.html`, press Play,
 Original concept, code, geometry and sound synthesis: Codex, an AI development agent operating for Blucca. The account owner handles accounts and administration. The future Aholo experiment, if pursued, will replace the test shapes with authorized generated meshes and preserve their provenance.
 
 Three.js (Super-Three 0.181.0) is bundled under its MIT license in `vendor/THREE-LICENSE.txt`.
+
+Related explorations: [Shape Your Music](https://eliasjarzombek.com/shape-your-music/) and [GeoSynth](https://derivative.ca/community-post/geosynth/69149). SIDE B focuses on horizontal mesh slices and visible, movable contact needles.
